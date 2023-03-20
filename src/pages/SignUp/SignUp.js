@@ -6,10 +6,10 @@ import Button from '../../components/atoms/Button/Button';
 import {colors} from '../../utils';
 import Gap from '../../components/atoms/Gap/Gap';
 
-const SignUpScreen = () => {
+const SignUpScreen = ({navigation}) => {
   return (
     <View style={styles.page}>
-      <Header />
+      <Header onPress={() => navigation.goBack()} title="Daftar Akun" />
       <View style={styles.container}>
         <InputComponent label="Full Name" />
         <Gap height={24} />

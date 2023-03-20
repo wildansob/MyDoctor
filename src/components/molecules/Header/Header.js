@@ -1,14 +1,14 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {IconBackDark} from '../../../assets/icon';
 import Gap from '../../atoms/Gap/Gap';
 import {colors} from '../../../utils';
+import Button from '../../atoms/Button/Button';
 
-const Header = () => {
+const Header = ({onPress, title}) => {
   return (
     <View style={styles.container}>
-      <IconBackDark />
-      <Text style={styles.text}>Text Header</Text>
+      <Button type="icon-only" icon="back-dark" onPress={onPress} />
+      <Text style={styles.text}>{title}</Text>
       <Gap width={24} />
     </View>
   );

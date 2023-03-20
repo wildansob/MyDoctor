@@ -3,6 +3,7 @@ import React from 'react';
 import {ILGetStarted, ILLogo} from '../../assets';
 import Button from '../../components/atoms/Button/Button';
 import Gap from '../../components/atoms/Gap/Gap';
+import {colors} from '../../utils';
 
 const GetStartedScreen = ({navigation}) => {
   return (
@@ -35,11 +36,12 @@ const styles = StyleSheet.create({
   page: {
     padding: 40,
     justifyContent: 'space-between',
+    backgroundColor: colors.white,
     flex: 1,
   },
   title: {
     fontSize: 28,
-    color: 'white',
+    color: colors.white,
     marginTop: 91,
     fontFamily: 'Nunito-SemiBold',
     maxWidth: 236,
