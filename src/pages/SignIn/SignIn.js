@@ -5,7 +5,7 @@ import InputComponent from '../../components/atoms/Input/InputComponent';
 import Link from '../../components/atoms/Link/Link';
 import Button from '../../components/atoms/Button/Button';
 import Gap from '../../components/atoms/Gap/Gap';
-import {colors} from '../../utils';
+import {colors, fonts} from '../../utils';
 
 const SignInScreen = ({navigation}) => {
   return (
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 20,
-    fontFamily: 'Nunito-SemiBold',
+    fontFamily: fonts.primary[600],
     marginTop: 40,
     marginBottom: 40,
     maxWidth: 153,

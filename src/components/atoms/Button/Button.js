@@ -2,6 +2,7 @@ import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {colors} from '../../../utils/colors';
 import IconOnly from './IconOnly';
+import {fonts} from '../../../utils';
 
 const Button = ({type, title, onPress, icon}) => {
   if (type === 'icon-only') {
@@ -32,6 +33,6 @@ const styles = StyleSheet.create({
       type === 'secondary'
         ? colors.button.secondary.text
         : colors.button.primary.text,
-    fontFamily: 'Nunito-SemiBold',
+    fontFamily: fonts.primary[600],
   }),
 });
