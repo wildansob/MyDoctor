@@ -18,8 +18,8 @@ const UploadPhotoScreen = ({navigation}) => {
             <Image source={ILNullPhoto} style={styles.avatar} />
             <IconAddPhoto style={styles.addPhoto} />
           </View>
-          <Text style={styles.name}>Shayna Melinda</Text>
-          <Text style={styles.profession}>Product Designer</Text>
+          <Text style={styles.name}>Wildan Shobara</Text>
+          <Text style={styles.profession}>React Native Developer</Text>
         </View>
         <View>
           <Button title="Upload and Continue" />
