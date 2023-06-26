@@ -6,6 +6,7 @@ import RatedDoctor from '../../components/molecules/RatedDoctor/RatedDoctor';
 import NewsItem from '../../components/molecules/NewsItem/NewsItem';
 import {colors, fonts} from '../../utils';
 import Gap from '../../components/atoms/Gap/Gap';
+import CatDummy from '../../assets/json/CatDummy'
 import {
   DummyDoctor1,
   DummyDoctor10,
@@ -50,10 +51,9 @@ const DoctorScreen = () => {
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
               <View style={styles.category}>
                 <Gap width={32} />
-                <DoctorCategory />
-                <DoctorCategory />
-                <DoctorCategory />
-                <DoctorCategory />
+                {CatDummy.data.map(item => {
+                return <DoctorCategory key={item.id} category={item.category} />
+                })}
                 <Gap width={22} />
               </View>
             </ScrollView>
