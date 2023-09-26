@@ -10,6 +10,11 @@ import SignInScreen from '../pages/SignIn/SignIn';
 import SignUpScreen from '../pages/SignUp/SignUp';
 import SplashScreen from '../pages/Splash/SplashScreen';
 import UploadPhotoScreen from '../pages/UploadPhoto/UploadPhoto';
+import ChooseDoctor from '../pages/ChooseDoctor/ChooseDoctor';
+import ChattingScreen from '../pages/Chatting/ChattingScreen';
+import UserProfile from '../pages/UserProfile/UserProfile';
+import UpdateProfile from '../pages/UpdateProfile/UpdateProfile';
+import DoctorProfile from '../pages/DoctorProfile/DoctorProfile';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -67,6 +72,31 @@ const Router = () => {
       <Stack.Screen
         name="MainApp"
         component={MainApp}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ChooseDoctor"
+        component={ChooseDoctor}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ChattingScreen"
+        component={ChattingScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="UserProfile"
+        component={UserProfile}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="UpdateProfile"
+        component={UpdateProfile}
+        options={{headerShown: false}}
+      />
+       <Stack.Screen
+        name="DoctorProfile"
+        component={DoctorProfile}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

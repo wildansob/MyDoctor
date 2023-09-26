@@ -1,6 +1,5 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React, {useState} from 'react';
-import ListDoctor from '../../components/molecules/ListDoctor/ListDoctor';
 import {colors, fonts} from '../../utils';
 import {
   DummyDoctor10,
@@ -8,6 +7,7 @@ import {
   DummyDoctor9,
   DummyHospital1,
 } from '../../assets';
+import List from '../../components/molecules/List/List';
 
 const MessagesScreen = () => {
   const [doctors, setDoctors] = useState([
@@ -36,7 +36,7 @@ const MessagesScreen = () => {
         <Text style={styles.title}>Messages</Text>
         {doctors.map(doctor => {
           return (
-            <ListDoctor
+            <List
               key={doctor.id}
               image={doctor.image}
               name={doctor.name}
